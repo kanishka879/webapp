@@ -6,8 +6,7 @@ pipeline {
         stage('Checkout SCM') {
             steps {
                 git branch: 'develop',
-                    credentialsId: 'github-key',
-                    url: 'git@github.com:kanishka879/webapp.git'
+                    url: 'https://github.com/kanishka879/webapp.git'
             }
         }
 
